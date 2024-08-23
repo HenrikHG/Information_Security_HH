@@ -109,22 +109,19 @@ As the notes on the various contents take up quite a lot of space, I have listed
   - **Continuous Threat Modeling:** Regular updates and reviews of the threat model to adapt to new threats.
   - **Process Over One-Time Job:** Recognize that threat modeling and security practices are ongoing efforts that require continuous attention and improvement.
 
-
-
-
-
 ---
 
 # Threat Modeling Content Notes
 
 Feel free to use my notes :-) You will notice that I started to make notes with the videos and therefore have less extensive notes about the texts. Please tell me if I missed something crucial.
 
-## Videos: Welcome to the World’s Shortest Threat Modeling Course
+# Threat Modeling Content Notes
+
+## Videos: The World’s Shortest Threat Modeling Course
 
 ## Introduction
-- **Timing of Threat Modeling:**
-  - Threat modeling should occur before any action (e.g., coding) is performed.
-  - It’s a set of methods that allow you to think about security proactively.
+- **Timing:** Threat modeling should occur before any action (e.g., coding).
+  - It allows proactive security planning.
 
 ## 4 Basic Framework Questions
 1. **What are we working on?**
@@ -133,25 +130,15 @@ Feel free to use my notes :-) You will notice that I started to make notes with 
 4. **Did we do a good job?**
 
 ## Collaboration to Answer Questions
-- **Beyond Whiteboards:**
-  - Collaboration goes beyond just using whiteboards.
-  - Online tools are excellent for enabling collaborative threat modeling.
+- **Beyond Whiteboards:** Collaboration extends beyond whiteboards. Online tools enable collaboration.
 
 ## Sketching
-- **Purpose of Sketching:**
-  - Sketching involves writing down what’s in our heads for others to engage with.
-  - It is the first step in answering "What are we working on?"
-
-- **Importance of Recording Threat Models:**
-  - Proper records are crucial, especially for regulatory purposes.
-  - Detailed records encourage deeper consideration of the threat model.
+- **Purpose:** Writing down ideas for others to engage with is the first step.
+- **Recording Threat Models:** Proper records are essential for regulatory purposes and detailed analysis.
 
 ## Data Flow Diagrams
-- **Concept of Trust Boundaries:**
-  - Different elements are operated by different entities, people, or processes, leading to trust boundaries.
-  - Data flows connect these different elements.
-
-- **5 Elements of a Data Flow Diagram:**
+- **Trust Boundaries:** Different entities, people, or processes lead to trust boundaries.
+- **5 Elements:**
   1. External entities
   2. Data Flows
   3. Data Stores
@@ -159,9 +146,7 @@ Feel free to use my notes :-) You will notice that I started to make notes with 
   5. Processes
 
 ## What Can Go Wrong?
-- **Core Question of Threat Modeling:**
-  - This is the heart of threat modeling.
-  - Pay close attention to the answers provided.
+- **Core Question:** Pay close attention to the answers.
 
 ## Structure: STRIDE
 - **Threat Categories:**
@@ -171,20 +156,14 @@ Feel free to use my notes :-) You will notice that I started to make notes with 
   - **I**nformation Disclosure
   - **D**enial of Service
   - **E**levation of Privileges
-  - One threat should be identified for each category.
 
-- **Threat Measurement:**
-  - For each identified threat, some form of measurement or mitigation must be designed.
+- **Threat Measurement:** Each threat needs measurement or mitigation.
 
 ## Risk Management
-- **Role in Threat Modeling:**
-  - Risk management should help evaluate what to do about the identified threats.
-  - Threat modeling informs and supports risk management decisions.
+- **Role:** Evaluate what to do about threats. Threat modeling supports risk management decisions.
 
 ## Evaluation: Have We Done a Good Job?
-- **Self-Reflection:**
-  - Would you recommend threat modeling to your colleagues?
-  - Do you feel that the effort was worth it?
+- **Self-Reflection:** Would you recommend threat modeling? Was the effort worth it?
 
 ### Questions/Ideas:
 - How does risk management relate to threat modeling?
@@ -194,64 +173,49 @@ Feel free to use my notes :-) You will notice that I started to make notes with 
 ## Braiterman et al 2020: Threat Modeling Manifesto
 
 ### Summary
-- **Definition of Threat Modeling:**
-  - Analyzing system representations to identify security and privacy concerns.
-  - Involves the same four basic questions of threath modeling.
-
-- **Purpose of Threat Modeling:**
-  - Recognize potential system failures.
-  - Identify and mitigate design and implementation issues.
-  - Inform decision-making throughout the system's lifecycle.
-
-- **Who Should Threat Model:**
-  - Everyone concerned with privacy, safety, and security.
-
+- **Definition:** Analyzing system representations to identify security/privacy concerns.
+- **Purpose:** Identify and mitigate design/implementation issues.
+- **Who Should Threat Model:** Everyone concerned with privacy, safety, security.
 - **Values:**
-  - Finding and fixing design issues over checkbox compliance.
-  - People and collaboration over processes, methodologies, and tools.
+  - Find/fix design issues over checkbox compliance.
+  - People/collaboration over processes, methodologies, tools.
   - Continuous refinement over single delivery.
-
 - **Principles:**
-  - Use threat modeling to improve system security and privacy through regular analysis.
-  - Align threat modeling with organizational development practices.
+  - Use threat modeling to improve security/privacy through regular analysis.
+  - Align with development practices.
   - Ensure outcomes are valuable to stakeholders.
-  - Emphasize dialogue for establishing common understanding.
-
-- **Recommended Patterns:**
-  - Systematic approach, informed creativity, varied viewpoints, useful toolkit, theory into practice.
-
-- **Anti-patterns to Avoid:**
-  - Hero threat modeler, tendency to overfocus, perfect representation.
+  - Emphasize dialogue for common understanding.
+- **Patterns:** Systematic approach, informed creativity, varied viewpoints, useful toolkit, theory into practice.
+- **Anti-patterns:** Hero modeler, overfocus, perfect representation.
 
 ### Questions/Ideas:
-- How can the principles outlined in the manifesto be adapted for small-scale projects with limited resources?
-- What strategies can be employed to ensure continuous threath modeling?
-- What are the key benefits of involving everyone in the threat modeling process?
+- How can the manifesto principles be adapted for small projects with limited resources?
+- What strategies ensure continuous threat modeling?
+- What are the benefits of involving everyone in threat modeling?
 
 ---
 
 ## OWASP Cheat Sheets Series Team 2021: Threat Modeling Cheat Sheet
 
 ### Summary
-- **Core Concepts of Threat Modeling:** 
-  - **Identify Assets:** What are you trying to protect?
+- **Core Concepts:**
+  - **Identify Assets:** What are you protecting?
   - **Identify Threats:** What can go wrong?
   - **Apply Mitigations:** What can you do about it?
-  - **Validate:** Ensure mitigations effectively address threats.
--> This is very similar to the four basic questions of threath modeling.
-
+  - **Validate:** Ensure mitigations work.
+  
 - **Threat Modeling Approaches:**
   - **STRIDE:** 
-  - **Attack Trees:** Break down a threat into a tree structure to explore different attack paths.
-  - **PASTA:** Align threat modeling with the development lifecycle.
+  - **Attack Trees:** Break down threats into a tree structure.
+  - **PASTA:** Align with the development lifecycle.
 
 - **Threat Modeling in Practice:**
-  - **Early and Frequent Analysis:** Integrate threat modeling from the start and continuously throughout the project.
-  - **Team Collaboration:** 
+  - **Early/Frequent Analysis:** Integrate threat modeling from the start.
+  - **Team Collaboration:** Work together on the model.
 
 - **Common Pitfalls:**
-  - Ignoring the dynamic nature of threats.
-  - Failing to update the threat model as the system evolves.
+  - Ignoring evolving threats.
+  - Failing to update the model as the system evolves.
 
 ### Questions/Ideas:
 - How can small teams efficiently implement STRIDE without extensive overhead?
