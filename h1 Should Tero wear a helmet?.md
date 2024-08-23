@@ -107,7 +107,6 @@ As the notes on the various contents take up quite a lot of space, I have listed
   - **Security Audits:** Regularly scheduled audits to assess the effectiveness of security measures.
   - **Penetration Tests:** Conduct simulated attacks to identify vulnerabilities.
   - **Continuous Threat Modeling:** Regular updates and reviews of the threat model to adapt to new threats.
-  - **Process Over One-Time Job:** Recognize that threat modeling and security practices are ongoing efforts that require continuous attention and improvement.
 
 ---
 
