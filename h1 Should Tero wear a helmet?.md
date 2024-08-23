@@ -228,3 +228,5 @@ I have listened to the podcast and will still add my handwritten notes here
 
 ### Questions/Ideas:
 - Placeholder
+
+Note: All of the contents have been created by myself, but I used AI to structure my texts as an .md code.
