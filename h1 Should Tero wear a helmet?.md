@@ -14,23 +14,18 @@ As the notes on the various contents take up quite a lot of space, I have listed
   - Use a password manager to generate and store complex passwords.
 
 - **Enable Two-Factor Authentication (2FA):**
-  - Adds an extra layer of security by requiring a second form of identification.
 
 - **Regularly Update Software:**
   - Keep your operating system, apps, and security software up to date.
-  - Apply patches and updates as soon as they are released.
 
-- **Be Wary of Phishing Attempts:**
+- **Be Aware of Phishing Attempts:**
   - Avoid clicking on suspicious links or downloading attachments from unknown sources.
-  - Verify the authenticity of requests for sensitive information.
 
 - **Backup Data Regularly:**
-  - Regularly backup important data to a secure location.
+  - Regularly backup important data.
   - Ensure backups are stored separately from your main system.
 
 - **Use Antivirus and Firewall Protection:**
-  - Install and regularly update antivirus software.
-  - Use a firewall to block unauthorized access to your network.
 
 - **Practice Safe Browsing:**
   - Avoid visiting untrusted websites.
@@ -40,13 +35,11 @@ As the notes on the various contents take up quite a lot of space, I have listed
   - Avoid accessing sensitive information over public Wi-Fi.
   - Use a VPN when connecting to public Wi-Fi networks.
 
-- **Educate Yourself and Others:**
-  - Stay informed about common security threats.
-  - Educate family members or employees on basic security practices.
+---
 
 ## b) Make-belief Boogie-Man - A Threat Model for an Imaginary Company
 
-### Imaginary Company: **DataGuard Health Services**
+### Imaginary Company: **XYZ Helsinki Health Services**
 
 #### (1) What are we working on?
 
@@ -54,10 +47,9 @@ As the notes on the various contents take up quite a lot of space, I have listed
   - **Crown Jewels:**
     - **Patient Health Data:** Includes personal health records, treatment history, and insurance information.
     - **Patient Portal:** Interface where patients schedule appointments, access records, and communicate with healthcare providers.
-    - **Health Monitoring System:** IoT devices tracking patient vitals in real-time.
   - **Supporting Assets:**
     - **Internal Communication System:** Email and messaging platforms used by employees.
-    - **Financial System:** Manages billing, payments, and payroll.
+    - **Financial System:** (e.g. SAP) Manages billing, payments, and payroll.
 
 - **Security Supports Business:**
   - Protecting patient data is crucial to maintaining trust and compliance with regulations (e.g., HIPAA).
@@ -72,7 +64,7 @@ As the notes on the various contents take up quite a lot of space, I have listed
     - Assurance that their personal health data is safe and private.
   - **Touchpoints:**
     - **Patient Portal:** The main interface for customer interaction.
-    - **Customer Support:** Available via phone and secure messaging.
+    - **Customer Support:** Available via phone, email and secure messaging.
 
 #### (2) What can go wrong?
 
@@ -87,12 +79,12 @@ As the notes on the various contents take up quite a lot of space, I have listed
 
 - **Prioritize Biggest Risks:**
   - **High Risk:** Unauthorized access to patient data (Spoofing).
-  - **Expected Value:** The probability of a data breach is moderate, but the monetary value of potential fines and loss of trust is extremely high.
+  - **Expected Value:** The probability of a data breach is moderate, but the monetary value of potential fines and loss of trust is extremely high. e.g. 
   
 - **Threat Actors:**
   - **Potential Attackers:**
     - **Cybercriminals:** Interested in stealing personal health information (PHI) for financial gain.
-    - **Nation-State Actors:** May target healthcare systems to destabilize or gather intelligence.
+    - **Nation-State Actors:** May target healthcare systems to destabilize.
   - **TTPs:**
     - **Phishing:** Common method used to gain initial access.
     - **Ransomware:** Encrypts patient data to extort money.
