@@ -56,7 +56,7 @@ As the notes on the various contents take up quite a lot of space, I have listed
   - Secure operations ensure continuous service delivery, essential for patient care and company reputation.
 
 - **Diagram of Company Systems:**
-  - (Consider a simplified diagram showing the interaction between the Patient Portal, Health Monitoring System, Internal Communication System, and Financial System.)
+   ![grafik](https://github.com/user-attachments/assets/73c68def-e861-41a8-b087-577c08313ff3)
 
 - **Customer is the King:**
   - **Customer Needs:**
