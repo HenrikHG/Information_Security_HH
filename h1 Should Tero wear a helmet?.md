@@ -16,10 +16,8 @@ As the notes on the various contents take up quite a lot of space, I have listed
 - **Enable Two-Factor Authentication (2FA):**
 
 - **Regularly Update Software:**
-  - Keep your operating system, apps, and security software up to date.
 
 - **Be Aware of Phishing Attempts:**
-  - Avoid clicking on suspicious links or downloading attachments from unknown sources.
 
 - **Backup Data Regularly:**
   - Regularly backup important data.
@@ -28,8 +26,6 @@ As the notes on the various contents take up quite a lot of space, I have listed
 - **Use Antivirus and Firewall Protection:**
 
 - **Practice Safe Browsing:**
-  - Avoid visiting untrusted websites.
-  - Use a secure and privacy-focused browser.
 
 - **Limit Public Wi-Fi Use:**
   - Avoid accessing sensitive information over public Wi-Fi.
