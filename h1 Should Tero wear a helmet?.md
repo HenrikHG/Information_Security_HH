@@ -1,4 +1,128 @@
-# Threat Modeling Notes
+# h1 Should Tero wear a helmet?
+
+As the notes on the various contents take up quite a lot of space, I have listed them at the bottom of the page!
+
+---
+
+# Tasks
+
+## a) Security Hygiene
+
+### Basic Security Practices Everyone Should Follow:
+- **Use Strong, Unique Passwords:**
+  - Avoid using the same password across multiple accounts.
+  - Use a password manager to generate and store complex passwords.
+
+- **Enable Two-Factor Authentication (2FA):**
+  - Adds an extra layer of security by requiring a second form of identification.
+
+- **Regularly Update Software:**
+  - Keep your operating system, apps, and security software up to date.
+  - Apply patches and updates as soon as they are released.
+
+- **Be Wary of Phishing Attempts:**
+  - Avoid clicking on suspicious links or downloading attachments from unknown sources.
+  - Verify the authenticity of requests for sensitive information.
+
+- **Backup Data Regularly:**
+  - Regularly backup important data to a secure location.
+  - Ensure backups are stored separately from your main system.
+
+- **Use Antivirus and Firewall Protection:**
+  - Install and regularly update antivirus software.
+  - Use a firewall to block unauthorized access to your network.
+
+- **Practice Safe Browsing:**
+  - Avoid visiting untrusted websites.
+  - Use a secure and privacy-focused browser.
+
+- **Limit Public Wi-Fi Use:**
+  - Avoid accessing sensitive information over public Wi-Fi.
+  - Use a VPN when connecting to public Wi-Fi networks.
+
+- **Educate Yourself and Others:**
+  - Stay informed about common security threats.
+  - Educate family members or employees on basic security practices.
+
+## b) Make-belief Boogie-Man - A Threat Model for an Imaginary Company
+
+### Imaginary Company: **DataGuard Health Services**
+
+#### (1) What are we working on?
+
+- **Our Assets:**
+  - **Crown Jewels:**
+    - **Patient Health Data:** Includes personal health records, treatment history, and insurance information.
+    - **Patient Portal:** Interface where patients schedule appointments, access records, and communicate with healthcare providers.
+    - **Health Monitoring System:** IoT devices tracking patient vitals in real-time.
+  - **Supporting Assets:**
+    - **Internal Communication System:** Email and messaging platforms used by employees.
+    - **Financial System:** Manages billing, payments, and payroll.
+
+- **Security Supports Business:**
+  - Protecting patient data is crucial to maintaining trust and compliance with regulations (e.g., HIPAA).
+  - Secure operations ensure continuous service delivery, essential for patient care and company reputation.
+
+- **Diagram of Company Systems:**
+  - (Consider a simplified diagram showing the interaction between the Patient Portal, Health Monitoring System, Internal Communication System, and Financial System.)
+
+- **Customer is the King:**
+  - **Customer Needs:**
+    - Secure, easy access to health records and services.
+    - Assurance that their personal health data is safe and private.
+  - **Touchpoints:**
+    - **Patient Portal:** The main interface for customer interaction.
+    - **Customer Support:** Available via phone and secure messaging.
+
+#### (2) What can go wrong?
+
+- **Threat Modeling Approaches:**
+  - **STRIDE:**
+    - **Spoofing:** Unauthorized access to patient accounts through weak authentication.
+    - **Tampering:** Modification of health records by unauthorized personnel.
+    - **Repudiation:** Patients or staff denying actions taken on the system.
+    - **Information Disclosure:** Unintentional exposure of patient data.
+    - **Denial of Service:** Attack on the Patient Portal, making it inaccessible.
+    - **Elevation of Privileges:** An attacker gains admin access to the Health Monitoring System.
+
+- **Prioritize Biggest Risks:**
+  - **High Risk:** Unauthorized access to patient data (Spoofing).
+  - **Expected Value:** The probability of a data breach is moderate, but the monetary value of potential fines and loss of trust is extremely high.
+  
+- **Threat Actors:**
+  - **Potential Attackers:**
+    - **Cybercriminals:** Interested in stealing personal health information (PHI) for financial gain.
+    - **Nation-State Actors:** May target healthcare systems to destabilize or gather intelligence.
+  - **TTPs:**
+    - **Phishing:** Common method used to gain initial access.
+    - **Ransomware:** Encrypts patient data to extort money.
+
+- **Business Continuity:**
+  - **Service Continuity:** Ensuring the Patient Portal and Health Monitoring Systems are always available.
+  - **Trust Maintenance:** Protecting patient data to maintain trust and comply with regulatory requirements.
+
+#### (3) What are we going to do about it?
+
+- **Mitigation Strategies:**
+  - **Reduce Attack Surface:** Implement stronger access controls and network segmentation.
+  - **Limit Entry Points:** Use multi-factor authentication for all critical systems.
+  - **META Approach:**
+    - **Mitigate:** Enhance encryption and secure configuration of all systems.
+    - **Eliminate:** Remove outdated or unused services that may pose a risk.
+    - **Transfer:** Use cybersecurity insurance to cover potential data breach costs.
+    - **Accept:** Accept low-risk issues that have minimal impact.
+
+#### (4) Did we do a good enough job?
+
+- **Evaluation Process:**
+  - **Security Audits:** Regularly scheduled audits to assess the effectiveness of security measures.
+  - **Penetration Tests:** Conduct simulated attacks to identify vulnerabilities.
+  - **Continuous Threat Modeling:** Regular updates and reviews of the threat model to adapt to new threats.
+  - **Process Over One-Time Job:** Recognize that threat modeling and security practices are ongoing efforts that require continuous attention and improvement.
+
+---
+
+# Threat Modeling Content Notes
 
 ## Videos: Welcome to the World’s Shortest Threat Modeling Course
 
@@ -148,122 +272,3 @@
 
 ### Questions/Ideas:
 - Placeholder
-
----
-
-# Tasks
-
-## a) Security Hygiene
-
-### Basic Security Practices Everyone Should Follow:
-- **Use Strong, Unique Passwords:**
-  - Avoid using the same password across multiple accounts.
-  - Use a password manager to generate and store complex passwords.
-
-- **Enable Two-Factor Authentication (2FA):**
-  - Adds an extra layer of security by requiring a second form of identification.
-
-- **Regularly Update Software:**
-  - Keep your operating system, apps, and security software up to date.
-  - Apply patches and updates as soon as they are released.
-
-- **Be Wary of Phishing Attempts:**
-  - Avoid clicking on suspicious links or downloading attachments from unknown sources.
-  - Verify the authenticity of requests for sensitive information.
-
-- **Backup Data Regularly:**
-  - Regularly backup important data to a secure location.
-  - Ensure backups are stored separately from your main system.
-
-- **Use Antivirus and Firewall Protection:**
-  - Install and regularly update antivirus software.
-  - Use a firewall to block unauthorized access to your network.
-
-- **Practice Safe Browsing:**
-  - Avoid visiting untrusted websites.
-  - Use a secure and privacy-focused browser.
-
-- **Limit Public Wi-Fi Use:**
-  - Avoid accessing sensitive information over public Wi-Fi.
-  - Use a VPN when connecting to public Wi-Fi networks.
-
-- **Educate Yourself and Others:**
-  - Stay informed about common security threats.
-  - Educate family members or employees on basic security practices.
-
-## b) Make-belief Boogie-Man - A Threat Model for an Imaginary Company
-
-### Imaginary Company: **DataGuard Health Services**
-
-#### (1) What are we working on?
-
-- **Our Assets:**
-  - **Crown Jewels:**
-    - **Patient Health Data:** Includes personal health records, treatment history, and insurance information.
-    - **Patient Portal:** Interface where patients schedule appointments, access records, and communicate with healthcare providers.
-    - **Health Monitoring System:** IoT devices tracking patient vitals in real-time.
-  - **Supporting Assets:**
-    - **Internal Communication System:** Email and messaging platforms used by employees.
-    - **Financial System:** Manages billing, payments, and payroll.
-
-- **Security Supports Business:**
-  - Protecting patient data is crucial to maintaining trust and compliance with regulations (e.g., HIPAA).
-  - Secure operations ensure continuous service delivery, essential for patient care and company reputation.
-
-- **Diagram of Company Systems:**
-  - (Consider a simplified diagram showing the interaction between the Patient Portal, Health Monitoring System, Internal Communication System, and Financial System.)
-
-- **Customer is the King:**
-  - **Customer Needs:**
-    - Secure, easy access to health records and services.
-    - Assurance that their personal health data is safe and private.
-  - **Touchpoints:**
-    - **Patient Portal:** The main interface for customer interaction.
-    - **Customer Support:** Available via phone and secure messaging.
-
-#### (2) What can go wrong?
-
-- **Threat Modeling Approaches:**
-  - **STRIDE:**
-    - **Spoofing:** Unauthorized access to patient accounts through weak authentication.
-    - **Tampering:** Modification of health records by unauthorized personnel.
-    - **Repudiation:** Patients or staff denying actions taken on the system.
-    - **Information Disclosure:** Unintentional exposure of patient data.
-    - **Denial of Service:** Attack on the Patient Portal, making it inaccessible.
-    - **Elevation of Privileges:** An attacker gains admin access to the Health Monitoring System.
-
-- **Prioritize Biggest Risks:**
-  - **High Risk:** Unauthorized access to patient data (Spoofing).
-  - **Expected Value:** The probability of a data breach is moderate, but the monetary value of potential fines and loss of trust is extremely high.
-  
-- **Threat Actors:**
-  - **Potential Attackers:**
-    - **Cybercriminals:** Interested in stealing personal health information (PHI) for financial gain.
-    - **Nation-State Actors:** May target healthcare systems to destabilize or gather intelligence.
-  - **TTPs:**
-    - **Phishing:** Common method used to gain initial access.
-    - **Ransomware:** Encrypts patient data to extort money.
-
-- **Business Continuity:**
-  - **Service Continuity:** Ensuring the Patient Portal and Health Monitoring Systems are always available.
-  - **Trust Maintenance:** Protecting patient data to maintain trust and comply with regulatory requirements.
-
-#### (3) What are we going to do about it?
-
-- **Mitigation Strategies:**
-  - **Reduce Attack Surface:** Implement stronger access controls and network segmentation.
-  - **Limit Entry Points:** Use multi-factor authentication for all critical systems.
-  - **META Approach:**
-    - **Mitigate:** Enhance encryption and secure configuration of all systems.
-    - **Eliminate:** Remove outdated or unused services that may pose a risk.
-    - **Transfer:** Use cybersecurity insurance to cover potential data breach costs.
-    - **Accept:** Accept low-risk issues that have minimal impact.
-
-#### (4) Did we do a good enough job?
-
-- **Evaluation Process:**
-  - **Security Audits:** Regularly scheduled audits to assess the effectiveness of security measures.
-  - **Penetration Tests:** Conduct simulated attacks to identify vulnerabilities.
-  - **Continuous Threat Modeling:** Regular updates and reviews of the threat model to adapt to new threats.
-  - **Process Over One-Time Job:** Recognize that threat modeling and security practices are ongoing efforts that require continuous attention and improvement.
-
