@@ -258,9 +258,10 @@ As the notes on the various contents take up quite a lot of space, I have listed
 
 ---
 
-## Darknet Diaries Podcast
+## Darknet Diaries Podcast "EP 144: Rachel"
 
 ### Summary
+I have listened to the podcast and will still add my handwritten notes here
 
 ### Questions/Ideas:
 - Placeholder
