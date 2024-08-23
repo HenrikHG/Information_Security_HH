@@ -109,6 +109,10 @@ As the notes on the various contents take up quite a lot of space, I have listed
   - **Continuous Threat Modeling:** Regular updates and reviews of the threat model to adapt to new threats.
   - **Process Over One-Time Job:** Recognize that threat modeling and security practices are ongoing efforts that require continuous attention and improvement.
 
+
+
+
+
 ---
 
 # Threat Modeling Content Notes
