@@ -116,6 +116,8 @@ As the notes on the various contents take up quite a lot of space, I have listed
 
 # Threat Modeling Content Notes
 
+Feel free to use my notes :-) You will notice that I started to make notes with the videos and therefore have less extensive notes about the texts. Please tell me if I missed something crucial.
+
 ## Videos: Welcome to the World’s Shortest Threat Modeling Course
 
 ## Introduction
@@ -193,11 +195,7 @@ As the notes on the various contents take up quite a lot of space, I have listed
 ### Summary
 - **Definition of Threat Modeling:**
   - Analyzing system representations to identify security and privacy concerns.
-  - Involves four key questions:
-    1. What are we working on?
-    2. What can go wrong?
-    3. What are we going to do about it?
-    4. Did we do a good enough job?
+  - Involves the same four basic questions of threath modeling.
 
 - **Purpose of Threat Modeling:**
   - Recognize potential system failures.
@@ -234,20 +232,21 @@ As the notes on the various contents take up quite a lot of space, I have listed
 ## OWASP Cheat Sheets Series Team 2021: Threat Modeling Cheat Sheet
 
 ### Summary
-- **Core Concepts of Threat Modeling:**
+- **Core Concepts of Threat Modeling:** 
   - **Identify Assets:** What are you trying to protect?
   - **Identify Threats:** What can go wrong?
   - **Apply Mitigations:** What can you do about it?
   - **Validate:** Ensure mitigations effectively address threats.
+-> This is very similar to the four basic questions of threath modeling.
 
 - **Threat Modeling Approaches:**
-  - **STRIDE:** Focus on six categories (Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, Elevation of Privilege).
+  - **STRIDE:** 
   - **Attack Trees:** Break down a threat into a tree structure to explore different attack paths.
   - **PASTA:** Align threat modeling with the development lifecycle.
 
 - **Threat Modeling in Practice:**
   - **Early and Frequent Analysis:** Integrate threat modeling from the start and continuously throughout the project.
-  - **Team Collaboration:** Involve cross-functional teams to cover diverse perspectives.
+  - **Team Collaboration:** 
 
 - **Common Pitfalls:**
   - Ignoring the dynamic nature of threats.
