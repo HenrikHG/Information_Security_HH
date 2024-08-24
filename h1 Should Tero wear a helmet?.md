@@ -224,9 +224,11 @@ Feel free to use my notes :-) You will notice that I started to make notes with 
 ## Darknet Diaries Podcast "EP 144: Rachel"
 
 ### Summary
-I have listened to the podcast and will still add my handwritten notes here
+- Rachel Tobac's journey into social engineering: Discovered her talent at Defcon's Social Engineering Village.
+- Founded SocialProof Security for social engineering attacks.
+- Importance of improvisation in her techniques.
 
 ### Questions/Ideas:
-- Placeholder
+- How can you train social engineering attacks legally?
 
 Note: All of the contents have been created by myself, but I used AI to structure my texts as an .md code.
