@@ -29,6 +29,7 @@
 ### Source
 - Lockheed Martin Corporation. "Intelligence-Driven Computer Network Defense Informed by Analysis of Adversary Campaigns and Intrusion Kill Chains." [https://lockheedmartin.com/content/dam/lockheed-martin/rms/documents/cyber/LM-White-Paper-Intel-Driven-Defense.pdf](https://lockheedmartin.com/content/dam/lockheed-martin/rms/documents/cyber/LM-White-Paper-Intel-Driven-Defense.pdf)
 
+---
 
 # a) Bookworm
 
@@ -125,6 +126,42 @@ This report details the installation of Debian 12-Bookworm Linux in a VirtualBox
   
 ![Screenshot 2024-08-28 001418](https://github.com/user-attachments/assets/f4335465-3117-403c-9a5d-aff8069dc370)
 
+---
 
-## Conclusion
-This guide provides detailed instructions for installing Debian 12-Bookworm on VirtualBox using a Windows host machine. The process was straightforward, and the virtual environment functioned as expected. Following these steps, anyone should be able to replicate the setup and start using Debian within VirtualBox.
+# b) Voluntary Bonus
+
+# Instruction: Updating All Software on Your Linux Box Using `apt-get`
+
+## Introduction
+This guide will show you how to update all software on a Linux system using the `apt-get` package manager. The instructions are intended for Debian-based distributions like Ubuntu and Debian.
+
+## Step-by-Step Instructions
+
+1. **Open the Terminal**:
+   - Launch your terminal application, either from the application menu or by pressing `Ctrl + Alt + T`.
+  
+![Screenshot 2024-08-30 143828](https://github.com/user-attachments/assets/9a4c8d61-b891-4195-b109-7949439d8a27)
+
+
+2. **Update the Package List**:
+   - Update the list of available packages and their versions by running:
+     ```bash
+     sudo apt-get update
+     ```
+   - Enter your password when prompted.
+
+![Screenshot 2024-08-30 144608 kopie](https://github.com/user-attachments/assets/97dcd42e-1c1f-40b8-b2d2-17d26b667b16)
+
+3. **Upgrade Installed Packages**:
+   - Upgrade all installed software to the latest versions with:
+     ```bash
+     sudo apt-get upgrade
+     ```
+![Screenshot 2024-08-30 144608](https://github.com/user-attachments/assets/a276fa8e-bb2b-4dd2-ae23-6d1100449c9b)
+
+4. **Full Upgrade (Optional but Recommended)**:
+   - For a comprehensive upgrade that handles dependencies, run:
+     ```bash
+     sudo apt-get dist-upgrade
+     ```
+![Screenshot 2024-08-30 144721](https://github.com/user-attachments/assets/8ad373f9-60a9-4f7a-a2cd-7a6aa8da36d6)
