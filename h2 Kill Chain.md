@@ -4,25 +4,88 @@
 
 # x) Cyber Kill Chain Summary
 
-- **Concept**: The Cyber Kill Chain, by Lockheed Martin, outlines the stages of a cyber intrusion. It offers a structured approach to understanding, detecting, and mitigating threats, especially from Advanced Persistent Threats (APTs).
+1. **Introduction**
 
-- **Phases**:
-  1. **Reconnaissance**: Attackers perform research and gather intelligence on their target to identify vulnerabilities. This may include scanning networks, harvesting email addresses, or researching key personnel.
-  2. **Weaponization**: The gathered information is used to create a payload, typically a piece of malware, by coupling an exploit (e.g., zero-day vulnerability) with a delivery mechanism (e.g., a phishing email).
-  3. **Delivery**: The weaponized payload is transmitted to the target. Common delivery methods include spear-phishing emails, malicious websites, or infected USB drives.
-  4. **Exploitation**: The delivered payload exploits a vulnerability in the target system, triggering malicious code execution. This can involve exploiting software vulnerabilities, tricking users into executing harmful files, or exploiting system features.
-  5. **Installation**: Malware is installed on the victim's system, establishing a persistent presence. This step ensures that the attacker maintains long-term access to the compromised system.
-  6. **Command and Control (C2)**: The compromised system establishes an outbound connection to an external server controlled by the attacker. This C2 channel allows the attacker to remotely control the system, execute commands, and exfiltrate data.
-  7. **Actions on Objectives**: Having gained control of the system, the attacker performs the intended actions, such as data exfiltration, spreading to other systems, disrupting operations, or manipulating sensitive information.
+   - Traditional methods of network defense are not enough to stop Advanced Persistent Threats (APTs).
+   - APTs are well-funded and skilled attackers who target specific organizations for long periods of time.
+   - They use a variety of tactics to gain access to networks, including socially-engineered emails, malware, and zero-day exploits.
 
-- **Purpose and Benefits**:
-  - The Cyber Kill Chain model helps defenders identify and disrupt attacks at various stages, allowing for tailored countermeasures and increased chances of thwarting the attack.
-  - Disrupting any single stage can prevent attackers from achieving their goals, enhancing overall defense resilience.
-  - It aids in prioritizing security investments and ensuring defenses cover the full spectrum of threats.
+2. **Related Work**
 
-- **Applications**:
-  - Organizations use the model to develop intelligence-driven defense strategies, map adversary behaviors, and continuously update defenses.
-  - It provides a framework for evaluating security operations, identifying defense gaps, and making data-driven improvements.
+   - The kill chain is a series of steps that an attacker must follow to achieve their goal.
+   - By understanding the kill chain, defenders can develop targeted defenses to stop attacks at any stage.
+
+3. **Intelligence-Driven Computer Network Defense (CND)**
+
+   - Intelligence-driven CND is a risk management strategy that focuses on understanding the attacker's threat component.
+   - It involves analyzing adversaries, their capabilities, objectives, and limitations.
+   - By studying intrusions and identifying patterns, defenders can develop more effective defenses.
+
+3.1 **Indicators and the Indicator Lifecycle**
+
+   - Indicators are pieces of information that can be used to identify an intrusion.
+   - There are three types of indicators:
+     - **Atomic**: Remains their value mostly and cannot be broken into pieces, e.g., email addresses, IP addresses.
+     - **Computed**: Derived data, usually from an incident, e.g., hash values, regex.
+     - **Behavioral**: Collection on Computed and Atomic indicators.
+   - By tracking indicators over time, defenders can learn more about the attacker's tactics and procedures.
+
+3.2 **Intrusion Kill Chain**
+
+   - The intrusion kill chain is a seven-step process that attackers follow to compromise a network:
+     1. **Reconnaissance**: Gather intel from where to breach, identify and select targets, gather email addresses, gain intel of technology.
+     2. **Weaponization**: Creating remote access and executable code that will gain backdoor access.
+     3. **Delivery**: Moving weapon to target environment, e.g., email with a PDF attachment.
+     4. **Exploitation**: Triggering hacker's code in target environment.
+     5. **Installation**: Gaining remote access.
+     6. **Command and Control (C2)**: Hacker has "hands on access to keyboard."
+     7. **Actions on Objectives**: Now hacker can work toward its goals, e.g., data exfiltration.
+   - By understanding the kill chain, defenders can develop targeted defenses to disrupt the attacker's progress at any stage.
+
+3.3 **Courses of Action**
+
+   - Defenders can use a variety of techniques to stop attacks:
+     1. **Detect**: Detect using network analytics or firewall analytics.
+     2. **Deny**: Deny access from certain IPs.
+     3. **Disrupt**: Disrupt attacker.
+     4. **Degrade**: Degrade attacker.
+     5. **Deceive**: Deceive attacker.
+     6. **Destroy**: Destroy information.
+   - By understanding the attacker's kill chain, defenders can choose the most effective course of action for each stage.
+
+3.4 **Intrusion Reconstruction**
+
+   - Analyzing past intrusions can help defenders identify patterns and develop more effective defenses.
+   - It is important to reconstruct the entire kill chain, even for unsuccessful attacks.
+
+3.5 **Campaign Analysis**
+
+   - By analyzing multiple intrusion attempts from the same APT, defenders can identify commonalities and patterns.
+   - This information can be used to develop more effective defenses and understand the attacker's intent.
+
+4. **Case Study**
+
+   4.1 **Intrusion Attempt 1**
+
+   - Infected PDF that used shellcode to create a backdoor and send data to hacker server.
+   - PDF was a copy of a legitimate one.
+
+   4.2 **Intrusion Attempt 2**
+
+   - Infected PDF that used shellcode to create a backdoor and send data to hacker server.
+   - PDF was a copy of a legitimate one.
+   - Sender IP address was different from the one before, but the same exploit was used.
+
+   4.3 **Intrusion Attempt 3**
+
+   - Noticed because of an indicator overlap (same IP as in intrusion attempt 2).
+   - PowerPoint file was the infected file this time.
+   - Zero-day exploit; the exploit was not known by Microsoft or anyone else.
+
+5. **Summary**
+
+   - Intelligence-driven CND is a necessary component of effective network defense.
+   - By understanding the attacker's kill chain and using indicators to identify and track intrusions, defenders can develop more effective defenses and protect their networks from attacks.
 
 - **Question/Insight**:
   - Given that this paper was published in 2011, how can the Cyber Kill Chain framework be adapted or updated to remain effective against modern cyber threats, including advancements in AI, machine learning, and quantum computing?
