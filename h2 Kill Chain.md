@@ -39,13 +39,15 @@ This report details the installation of Debian 12-Bookworm Linux in a VirtualBox
 
 1. **Launch VirtualBox**:
    - Open VirtualBox on your Windows machine.
+  
+![Screenshot 2024-08-28 000437](https://github.com/user-attachments/assets/031ee528-2cf6-4929-a7d8-459d8a1781be)
 
 2. **Create a New VM**:
    - Click `Machine` in the top menu and select `New...`.
-   - Change to ExpertMode
 
 ![Screenshot 2024-08-28 000551](https://github.com/user-attachments/assets/446b29eb-9bec-4c50-a451-ce9832300017)
-
+  
+   - Change to ExpertMode!
    - Fill in the following details:
      - **Name**: DebianBookworm
      - **Type**: Linux
