@@ -19,7 +19,11 @@ This report details the installation of Debian 12-Bookworm Linux in a VirtualBox
    - Follow the on-screen instructions, accepting the default settings throughout the installation process.
    - Once the installation is complete, launch VirtualBox to ensure it installed correctly.
 
-   **Screenshot Placeholder 1**: *VirtualBox installation screen on Windows*
+![Screenshot 2024-08-28 002816](https://github.com/user-attachments/assets/e89bf1b0-bce5-465c-ad6e-d8117eff4b64)
+
+![Screenshot 2024-08-28 003031](https://github.com/user-attachments/assets/4cad2de6-6197-4ee1-a762-bcadadfe7250)
+
+![Screenshot 2024-08-28 000437](https://github.com/user-attachments/assets/214f8d4a-3735-4db5-ae1b-99201a7f71f0)
 
 
 ### Download Debian 12-Bookworm ISO
@@ -27,8 +31,7 @@ This report details the installation of Debian 12-Bookworm Linux in a VirtualBox
    - Go to the official [Debian CD Image website](https://www.debian.org/CD/live/).
    - Locate and download the latest Debian 12-Bookworm live ISO. The specific file as of this writing is `debian-live-12.6.0-amd64-xfce.iso`.
    - Save the ISO file to a convenient location on your computer.
-
-   **Screenshot Placeholder 2**: *Debian 12-Bookworm download page*
+  OR click this [link](https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-12.6.0-amd64-xfce.iso)
 
 ## Creating a New Virtual Machine
 
@@ -39,31 +42,29 @@ This report details the installation of Debian 12-Bookworm Linux in a VirtualBox
 
 2. **Create a New VM**:
    - Click `Machine` in the top menu and select `New...`.
+   - Change to ExpertMode
+
+![Screenshot 2024-08-28 000551](https://github.com/user-attachments/assets/446b29eb-9bec-4c50-a451-ce9832300017)
+
    - Fill in the following details:
      - **Name**: DebianBookworm
      - **Type**: Linux
      - **Version**: Debian (64-bit)
-   - Allocate **Memory Size** to 4096 MB (4 GB) or more, depending on your system's RAM.
-   - Choose `Create a virtual hard disk now` and click `Create`.
-
-   **Screenshot Placeholder 3**: *VirtualBox New VM settings on Windows*
-
-3. **Configure Virtual Hard Disk**:
-   - Select `VDI (VirtualBox Disk Image)` as the hard disk file type.
-   - Choose `Dynamically allocated` storage.
-   - Set the **file size** to 60 GB, then click `Create`.
-
-   **Screenshot Placeholder 4**: *Virtual Hard Disk configuration screen*
-
-4. **Insert Debian ISO Image as a Virtual CDROM**:
-   - With your new VM selected, click `Settings`.
-   - Navigate to the `Storage` tab.
-   - Under `Controller: IDE`, select the `Empty` CDROM drive.
-   - On the right side, click the CD icon next to `Optical Drive`.
    - Select `Choose a disk file...` and browse to the Debian ISO you downloaded earlier.
-   - Click `OK` to close the settings window.
+   - Skip `unattended install`
 
-   **Screenshot Placeholder 5**: *ISO image selection in VirtualBox*
+![Screenshot 2024-08-28 000652](https://github.com/user-attachments/assets/abe2e0d0-e25f-4273-9f1c-7c9cd7bf4963)
+
+   - Allocate **Memory Size** to 4096 MB (4 GB) or more, depending on your system's RAM.
+
+![Screenshot 2024-08-28 000758](https://github.com/user-attachments/assets/baa2cf64-4b72-4e83-87cb-13527c950654)
+
+   - Create a Virtual Hard Disk
+   - Set the **file size** to 30 GB.
+
+![Screenshot 2024-08-28 000823](https://github.com/user-attachments/assets/e45cc2a0-e77e-4737-a1b9-8c1a6c08d070)
+
+   - Click on `Finish`
 
 ## Booting and Installing Debian 12-Bookworm
 
@@ -71,38 +72,23 @@ This report details the installation of Debian 12-Bookworm Linux in a VirtualBox
    - In the VirtualBox Manager, double-click your newly created VM to start it.
    - The VM will boot from the Debian ISO, bringing up the Debian boot menu.
 
+![Screenshot 2024-08-28 001008](https://github.com/user-attachments/assets/9338e5c7-d456-4e54-b380-94afc9779bac)
+
 2. **Start the Debian Installer**:
-   - In the boot menu, select `Graphical Install` and press `Enter`.
+   - In the boot menu, select `LIve install` and press `Enter`.
 
-   **Screenshot Placeholder 6**: *Debian boot menu*
+![Screenshot 2024-08-28 001106](https://github.com/user-attachments/assets/2e05b400-0c96-4d13-8ed8-32dcca2f62b7)
 
-3. **Configure Installation**:
-   - Follow the on-screen instructions to configure the installation.
-   - Select your preferred language, location, and keyboard layout.
-   - Configure the network settings if required, and set up the root password and user account.
-
-   **Screenshot Placeholder 7**: *Debian installer language selection*
-
-4. **Partition Disks**:
-   - Select `Guided - use entire disk` for partitioning.
-   - Choose `All files in one partition (recommended for new users)` and continue.
-
-   **Screenshot Placeholder 8**: *Partition disk setup*
-
-5. **Finish Installation**:
-   - After partitioning, the installer will copy files to the virtual hard disk.
-   - When prompted, install the GRUB boot loader. Choose the default device.
-   - Finish the installation and reboot the VM when asked.
-
-   **Screenshot Placeholder 9**: *Installation progress screen*
-
-6. **First Boot into Debian**:
+3. **First Boot into Debian**:
    - After rebooting, the VM will boot into your newly installed Debian 12-Bookworm system.
-   - Log in using the user account created during installation.
 
-   **Screenshot Placeholder 10**: *Debian login screen*
+![Screenshot 2024-08-28 001324](https://github.com/user-attachments/assets/2d51625a-94c3-482f-934d-a96d1e5ddf85)
+
+4. **Test the system**:
+    - You may want to open the Browser to test the connection
+  
+![Screenshot 2024-08-28 001418](https://github.com/user-attachments/assets/f4335465-3117-403c-9a5d-aff8069dc370)
+
 
 ## Conclusion
 This guide provides detailed instructions for installing Debian 12-Bookworm on VirtualBox using a Windows host machine. The process was straightforward, and the virtual environment functioned as expected. Following these steps, anyone should be able to replicate the setup and start using Debian within VirtualBox.
-
-**Note**: Screenshots will be added later to support the visual understanding of the instructions.
