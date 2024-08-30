@@ -30,10 +30,9 @@ This report details the installation of Debian 12-Bookworm Linux in a VirtualBox
 ### Download Debian 12-Bookworm ISO
 1. **Download the ISO Image**:
    - Go to the official [Debian CD Image website](https://www.debian.org/CD/live/).
-   - Locate and download the latest Debian 12-Bookworm live ISO. The specific file as of this writing is `debian-live-12.6.0-amd64-xfce.iso`.
+   - Locate and download the latest Debian 12-Bookworm live ISO. The specific file as of this writing is `debian-live-12.6.0-amd64-xfce.iso` OR click this [DOWNLOAD LINK](https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-12.6.0-amd64-xfce.iso)
    - Save the ISO file to a convenient location on your computer.
-  OR click this [link](https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-12.6.0-amd64-xfce.iso)
-
+  
 ## Creating a New Virtual Machine
 
 ### Step-by-Step Instructions
