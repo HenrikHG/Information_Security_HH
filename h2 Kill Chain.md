@@ -9,19 +9,20 @@ This report details the installation of Debian 12-Bookworm Linux in a VirtualBox
 
 ### VirtualBox Installation
 1. **Download VirtualBox**: 
-   - Visit the [official VirtualBox website](https://www.virtualbox.org/).
-   - Navigate to the [downloads section](https://www.virtualbox.org/wiki/Downloads).
+   - Visit the [official VirtualBox website](https://www.virtualbox.org/) and navigate to the [downloads section](https://www.virtualbox.org/wiki/Downloads).
    - Select the Windows host installer.
    - Download and run the installer.
 
 2. **Install VirtualBox**:
    - After downloading, double-click the installer to launch it.
    - Follow the on-screen instructions, accepting the default settings throughout the installation process.
-   - Once the installation is complete, launch VirtualBox to ensure it installed correctly.
 
 ![Screenshot 2024-08-28 002816](https://github.com/user-attachments/assets/e89bf1b0-bce5-465c-ad6e-d8117eff4b64)
 
 ![Screenshot 2024-08-28 003031](https://github.com/user-attachments/assets/4cad2de6-6197-4ee1-a762-bcadadfe7250)
+
+
+   - Once the installation is complete, launch VirtualBox to ensure it installed correctly.
 
 ![Screenshot 2024-08-28 000437](https://github.com/user-attachments/assets/214f8d4a-3735-4db5-ae1b-99201a7f71f0)
 
