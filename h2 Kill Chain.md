@@ -1,4 +1,36 @@
-# Technical Report: Installing Debian 12-Bookworm on VirtualBox for Windows
+# h2 Kill Chain
+
+# Cyber Kill Chain Summary
+
+- **Concept**: The Cyber Kill Chain, developed by Lockheed Martin, is a systematic framework that details the stages of a cyber intrusion. It provides a structured approach to understanding, detecting, analyzing, and mitigating cyber threats, particularly from Advanced Persistent Threats (APTs).
+
+- **Phases**:
+  1. **Reconnaissance**: Attackers perform research and gather intelligence on their target to identify vulnerabilities. This may include scanning networks, harvesting email addresses, or researching key personnel.
+  2. **Weaponization**: The gathered information is used to create a payload, typically a piece of malware, by coupling an exploit (e.g., zero-day vulnerability) with a delivery mechanism (e.g., a phishing email).
+  3. **Delivery**: The weaponized payload is transmitted to the target. Common delivery methods include spear-phishing emails, malicious websites, or infected USB drives.
+  4. **Exploitation**: The delivered payload exploits a vulnerability in the target system, triggering malicious code execution. This can involve exploiting software vulnerabilities, tricking users into executing harmful files, or exploiting system features.
+  5. **Installation**: Malware is installed on the victim's system, establishing a persistent presence. This step ensures that the attacker maintains long-term access to the compromised system.
+  6. **Command and Control (C2)**: The compromised system establishes an outbound connection to an external server controlled by the attacker. This C2 channel allows the attacker to remotely control the system, execute commands, and exfiltrate data.
+  7. **Actions on Objectives**: Having gained control of the system, the attacker performs the intended actions, such as data exfiltration, spreading to other systems, disrupting operations, or manipulating sensitive information.
+
+- **Purpose and Benefits**:
+  - The Cyber Kill Chain model assists defenders in identifying and disrupting the attack at various stages. By understanding each phase, security teams can implement specific countermeasures tailored to each stage, increasing the chances of thwarting the attack.
+  - The model emphasizes that disrupting just one stage of the kill chain can prevent the attacker from achieving their objectives. This approach helps in creating a more resilient defense system.
+  - It also aids in prioritizing security investments and resources, ensuring that defenses are comprehensive and capable of responding to the full spectrum of potential threats.
+
+- **Applications**:
+  - Organizations use the Cyber Kill Chain to develop intelligence-driven defense strategies. This includes mapping out potential adversary behaviors, aligning defensive measures to counter these behaviors, and continuously updating defenses based on new threat intelligence.
+  - The model also serves as a framework for measuring the effectiveness of security operations. By analyzing past incidents through the kill chain lens, organizations can identify gaps in their defenses and make data-driven decisions to improve their security posture.
+
+- **Question/Insight**: - Given that this paper was published in 2011, how can the Cyber Kill Chain framework be adapted or updated to remain effective against modern cyber threats, including advancements in AI, machine learning, and quantum computing?
+
+# Source
+- Lockheed Martin Corporation. "Intelligence-Driven Computer Network Defense Informed by Analysis of Adversary Campaigns and Intrusion Kill Chains." [https://lockheedmartin.com/content/dam/lockheed-martin/rms/documents/cyber/LM-White-Paper-Intel-Driven-Defense.pdf](https://lockheedmartin.com/content/dam/lockheed-martin/rms/documents/cyber/LM-White-Paper-Intel-Driven-Defense.pdf)
+
+
+# a) Bookworm
+
+## Technical Report: Installing Debian 12-Bookworm on VirtualBox for Windows
 
 **Note**: If you are using macOS or Linux, please refer to [this article](https://terokarvinen.com/2021/install-debian-on-virtualbox/) for platform-specific instructions.
 
