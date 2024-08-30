@@ -4,7 +4,7 @@
 
 # x) Cyber Kill Chain Summary
 
-- **Concept**: The Cyber Kill Chain, developed by Lockheed Martin, is a systematic framework that details the stages of a cyber intrusion. It provides a structured approach to understanding, detecting, analyzing, and mitigating cyber threats, particularly from Advanced Persistent Threats (APTs).
+- **Concept**: The Cyber Kill Chain, by Lockheed Martin, outlines the stages of a cyber intrusion. It offers a structured approach to understanding, detecting, and mitigating threats, especially from Advanced Persistent Threats (APTs).
 
 - **Phases**:
   1. **Reconnaissance**: Attackers perform research and gather intelligence on their target to identify vulnerabilities. This may include scanning networks, harvesting email addresses, or researching key personnel.
@@ -16,15 +16,16 @@
   7. **Actions on Objectives**: Having gained control of the system, the attacker performs the intended actions, such as data exfiltration, spreading to other systems, disrupting operations, or manipulating sensitive information.
 
 - **Purpose and Benefits**:
-  - The Cyber Kill Chain model assists defenders in identifying and disrupting the attack at various stages. By understanding each phase, security teams can implement specific countermeasures tailored to each stage, increasing the chances of thwarting the attack.
-  - The model emphasizes that disrupting just one stage of the kill chain can prevent the attacker from achieving their objectives. This approach helps in creating a more resilient defense system.
-  - It also aids in prioritizing security investments and resources, ensuring that defenses are comprehensive and capable of responding to the full spectrum of potential threats.
+  - The Cyber Kill Chain model helps defenders identify and disrupt attacks at various stages, allowing for tailored countermeasures and increased chances of thwarting the attack.
+  - Disrupting any single stage can prevent attackers from achieving their goals, enhancing overall defense resilience.
+  - It aids in prioritizing security investments and ensuring defenses cover the full spectrum of threats.
 
 - **Applications**:
-  - Organizations use the Cyber Kill Chain to develop intelligence-driven defense strategies. This includes mapping out potential adversary behaviors, aligning defensive measures to counter these behaviors, and continuously updating defenses based on new threat intelligence.
-  - The model also serves as a framework for measuring the effectiveness of security operations. By analyzing past incidents through the kill chain lens, organizations can identify gaps in their defenses and make data-driven decisions to improve their security posture.
+  - Organizations use the model to develop intelligence-driven defense strategies, map adversary behaviors, and continuously update defenses.
+  - It provides a framework for evaluating security operations, identifying defense gaps, and making data-driven improvements.
 
-- **Question/Insight**: - Given that this paper was published in 2011, how can the Cyber Kill Chain framework be adapted or updated to remain effective against modern cyber threats, including advancements in AI, machine learning, and quantum computing?
+- **Question/Insight**:
+  - Given that this paper was published in 2011, how can the Cyber Kill Chain framework be adapted or updated to remain effective against modern cyber threats, including advancements in AI, machine learning, and quantum computing?
 
 ### Source
 - Lockheed Martin Corporation. "Intelligence-Driven Computer Network Defense Informed by Analysis of Adversary Campaigns and Intrusion Kill Chains." [https://lockheedmartin.com/content/dam/lockheed-martin/rms/documents/cyber/LM-White-Paper-Intel-Driven-Defense.pdf](https://lockheedmartin.com/content/dam/lockheed-martin/rms/documents/cyber/LM-White-Paper-Intel-Driven-Defense.pdf)
@@ -165,3 +166,7 @@ This guide will show you how to update all software on a Linux system using the 
      sudo apt-get dist-upgrade
      ```
 ![Screenshot 2024-08-30 144721](https://github.com/user-attachments/assets/8ad373f9-60a9-4f7a-a2cd-7a6aa8da36d6)
+
+### Source
+[Why you Need apt-get update and apt-get upgrade](https://blog.packagecloud.io/you-need-apt-get-update-and-apt-get-upgrade/) - Blog.Packagecloud.io
+
