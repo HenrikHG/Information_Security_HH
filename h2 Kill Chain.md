@@ -1,6 +1,8 @@
 # h2 Kill Chain
 
-# Cyber Kill Chain Summary
+---
+
+# x) Cyber Kill Chain Summary
 
 - **Concept**: The Cyber Kill Chain, developed by Lockheed Martin, is a systematic framework that details the stages of a cyber intrusion. It provides a structured approach to understanding, detecting, analyzing, and mitigating cyber threats, particularly from Advanced Persistent Threats (APTs).
 
@@ -24,7 +26,7 @@
 
 - **Question/Insight**: - Given that this paper was published in 2011, how can the Cyber Kill Chain framework be adapted or updated to remain effective against modern cyber threats, including advancements in AI, machine learning, and quantum computing?
 
-# Source
+### Source
 - Lockheed Martin Corporation. "Intelligence-Driven Computer Network Defense Informed by Analysis of Adversary Campaigns and Intrusion Kill Chains." [https://lockheedmartin.com/content/dam/lockheed-martin/rms/documents/cyber/LM-White-Paper-Intel-Driven-Defense.pdf](https://lockheedmartin.com/content/dam/lockheed-martin/rms/documents/cyber/LM-White-Paper-Intel-Driven-Defense.pdf)
 
 
