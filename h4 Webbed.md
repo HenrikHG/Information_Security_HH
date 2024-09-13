@@ -135,6 +135,6 @@ WebGoat 2023.4 was successfully installed.
   1. Identify the vulnerable input field and inject SQL code to modify the query.
   2. Example solution:
      ```sql
-     ' OR+'1'='1'--;
+     ' OR+1=1--;
      ```
 ![Screenshot 2024-09-12 110303](https://github.com/user-attachments/assets/ffe5d83c-0850-48c0-a9ab-dbc042279534)
