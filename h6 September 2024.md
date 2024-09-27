@@ -21,52 +21,78 @@
 
 ## **a) Installing Hashcat and Testing with a Sample Hash**
 
-### **Step 1: Installing Hashcat**
-1. **Download Hashcat**:
-   - Visit [Hashcat's official website](https://hashcat.net/hashcat/) to download the latest version.
-   - Follow the installation instructions for your operating system (Windows/Linux/MacOS).
+## Step 1: Install Hashcat and Required Tools
+1. Update your package list:
+   ```bash
+   sudo apt-get update
+   ```
+2. Install hashid, hashcat, and wget:
+   ```bash
+   sudo apt-get -y install hashid hashcat wget
+   ```
+   
+![Screenshot 2024-09-27 112612](https://github.com/user-attachments/assets/d5df65da-8b28-4eb4-9a51-2dbde23fd0b2)
 
-2. **Verify Installation**:
-   - Open your terminal or command prompt.
-   - Run the following command:
-     ```bash
-     hashcat -I
-     ```
-   - This command should display information about Hashcat's version and your system’s supported hardware.
+## Step 2: Create a Working Directory
+1. Create a new directory for your work:
+   ```bash
+   mkdir hashed
+   ```
+2. Change to the new directory:
+   ```bash
+   cd hashed
+   ```
+   
+## Step 3: Download a Dictionary File
+1. Download the popular Rockyou dictionary file:
+   ```bash
+   wget https://github.com/danielmiessler/SecLists/raw/master/Passwords/Leaked-Databases/rockyou.txt.tar.gz
+   ```
 
-### **Step 2: Testing with a Sample Hash**
-1. **Generate a Sample Hash**:
-   - Let's create a simple hash using MD5. For example, using `password123`:
-     ```bash
-     echo -n "password123" | md5sum
-     ```
-   - The output should be: `482c811da5d5b4bc6d497ffa98491e38`.
+![Screenshot 2024-09-27 113100](https://github.com/user-attachments/assets/ccf4993a-158d-4ab2-b5f9-bed92b323fd1)
 
-2. **Cracking the Sample Hash**:
-   - Create a text file (`hashes.txt`) with the generated hash:
-     ```
-     482c811da5d5b4bc6d497ffa98491e38
-     ```
-   - Download the `rockyou.txt` wordlist, as it contains a comprehensive list of common passwords:
-     ```bash
-     wget https://github.com/brannondorsey/naive-hashcat/releases/download/data/rockyou.txt
-     ```
-   - Run Hashcat to crack the hash using the wordlist:
-     ```bash
-     hashcat -m 0 hashes.txt rockyou.txt -o cracked_sample.txt
-     ```
-   - The command breakdown:
-     - `-m 0`: Specifies MD5 hash type.
-     - `hashes.txt`: Input file containing the hash.
-     - `rockyou.txt`: Wordlist used to crack the hash.
-     - `-o cracked_sample.txt`: Output file to store the cracked hash.
+2. Extract the contents:
+   ```bash
+   tar xf rockyou.txt.tar.gz
+   ```
+3. Remove the compressed file to save space:
+   ```bash
+   rm rockyou.txt.tar.gz
+   ```
+   
+4. Preview the Dictionary
+   View the first 10 entries in the dictionary:
+   ```bash
+   head rockyou.txt
+   ```
 
-3. **Check the Result**:
-   - After Hashcat finishes, you can check the output file to see the cracked password:
-     ```bash
-     cat cracked_sample.txt
-     ```
-   - The output should show the original password, e.g., `482c811da5d5b4bc6d497ffa98491e38:password123`.
+![Screenshot 2024-09-27 113640](https://github.com/user-attachments/assets/ba648927-21de-4b49-a04a-cf27c2105f7a)
+ 
+## Step 4: Identify the Hash Type
+1. Use `hashid` to identify the type of your hash. Replace `6b1628b016dff46e6fa35684be6acc96` with your hash:
+   ```bash
+   hashid -m 6b1628b016dff46e6fa35684be6acc96
+   ```
+   
+![Screenshot 2024-09-27 114034](https://github.com/user-attachments/assets/741c580b-04e9-4db5-9cf1-f86bb05fdd71)
+
+## Step 5: Crack the Hash
+1. Use hashcat to crack the hash. Replace `'6b1628b016dff46e6fa35684be6acc96'` with your hash:
+   ```bash
+   hashcat -m 0 '6b1628b016dff46e6fa35684be6acc96' rockyou.txt -o solved
+   ```
+
+![Screenshot 2024-09-27 114212](https://github.com/user-attachments/assets/974bb02d-0bf8-4191-adee-7101dae4c8ac)
+![Screenshot 2024-09-27 114233](https://github.com/user-attachments/assets/56ea12d9-120e-4dac-9fa5-a09478f03903)
+![Screenshot 2024-09-27 114256](https://github.com/user-attachments/assets/d7cf3ad7-1128-47cb-a684-22645b8f3f21)
+
+## Step 6: View the Cracked Password
+1. Display the cracked password:
+   ```bash
+   cat solved
+   ```
+
+![Screenshot 2024-09-27 114526](https://github.com/user-attachments/assets/1af9c21d-f74b-4938-b99d-5af53db73160)
 
 ---
 
@@ -78,32 +104,24 @@
   ```bash
   hashid -m d595b2086532422bbe654bc07ea030df
   ```
-- According to the document, it is likely an MD5 hash, and the `-m` parameter for MD5 in Hashcat is `0`.
+
+![Screenshot 2024-09-27 114717](https://github.com/user-attachments/assets/f8dc038b-f077-4907-a318-b0266f959382)
+
 
 ### **Step 2: Cracking the Hash with Hashcat**
-1. **Create a File with the Hash**:
-   - Create a file named `target_hash.txt` and add the hash:
-     ```
-     d595b2086532422bbe654bc07ea030df
-     ```
-
-2. **Crack the Hash**:
+1. **Crack the Hash**:
    - Use the `rockyou.txt` wordlist to crack the hash:
      ```bash
      hashcat -m 0 target_hash.txt rockyou.txt -o cracked_hash.txt
      ```
-   - The command breakdown:
-     - `-m 0`: Specifies MD5 hash type.
-     - `target_hash.txt`: Input file containing the hash.
-     - `rockyou.txt`: Wordlist used to crack the hash.
-     - `-o cracked_hash.txt`: Output file to store the cracked hash.
+
+![Screenshot 2024-09-27 114934](https://github.com/user-attachments/assets/deee7dd6-72e8-4a15-a097-4b70449181a8)
+
 
 3. **Check the Cracked Password**:
    - After the cracking process completes, view the result:
      ```bash
-     cat cracked_hash.txt
+     cat solved
      ```
-   - This will display the cracked password corresponding to the given hash.
-
-### **Results**
-- Hashcat should display the cracked password in the `cracked_hash.txt` file, which completes the process.
+     
+![Screenshot 2024-09-27 114946](https://github.com/user-attachments/assets/48ad4b66-ee8f-4ad0-9fa2-aa2125ae7c74)
